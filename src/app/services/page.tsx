@@ -20,28 +20,28 @@ export default function Services() {
 
   return (
     <>
-      <div className="bg-[var(--color-navy)] py-20 text-white">
+      <div className="bg-[var(--color-navy)] pt-28 pb-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ label: 'Services', href: '/services' }]} />
-          <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">Our Services</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">A comprehensive suite of freight forwarding and logistics solutions designed to streamline your global trade operations.</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 leading-tight">Our Services</h1>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">A comprehensive suite of freight forwarding and logistics solutions designed to streamline your global trade operations.</p>
         </div>
       </div>
 
-      <section className="py-24 bg-[var(--color-light)]/20">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
-            title="End-to-end logistics solutions."
+            title="End-to-end agro export solutions."
             description="We manage every aspect of the supply chain, ensuring your cargo moves efficiently from origin to destination."
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {services.map((service, i) => (
-              <Card key={i} className="p-8 flex flex-col h-full hover:-translate-y-1 transition-transform group">
-                <service.icon className="h-10 w-10 text-[var(--color-orange)] mb-6 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[var(--color-navy)] mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-8 flex-grow">{service.desc}</p>
-                <Link href={`/services/${service.slug}`} className="text-[var(--color-orange)] font-semibold inline-flex items-center hover:underline mt-auto">
+              <Card key={i} className="p-7 flex flex-col h-full hover:-translate-y-1 transition-transform duration-200 group">
+                <service.icon className="h-9 w-9 text-[var(--color-orange)] mb-5 group-hover:scale-110 transition-transform duration-200" />
+                <h3 className="text-lg font-bold text-[var(--color-navy)] mb-2">{service.title}</h3>
+                <p className="text-slate-600 mb-6 flex-grow text-sm leading-relaxed">{service.desc}</p>
+                <Link href={`/services/${service.slug}`} className="text-[var(--color-orange)] font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all mt-auto">
                   Learn more
                 </Link>
               </Card>

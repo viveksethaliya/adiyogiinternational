@@ -18,17 +18,25 @@ export const SectionHeading = ({
   dark = false,
 }: SectionHeadingProps) => {
   return (
-    <div className={`mb-12 ${centered ? 'text-center' : ''} ${className}`}>
+    <div className={`mb-10 ${centered ? 'text-center' : ''} ${className}`}>
       {eyebrow && (
-        <span className={`block font-semibold uppercase tracking-wider text-sm mb-2 ${dark ? 'text-[var(--color-orange)]' : 'text-[var(--color-orange)]'}`}>
+        <span className="inline-block font-bold uppercase tracking-widest text-xs mb-3 text-[var(--color-orange)] bg-[var(--color-orange)]/10 px-3 py-1 rounded-full">
           {eyebrow}
         </span>
       )}
-      <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${dark ? 'text-white' : 'text-[var(--color-navy)]'}`}>
+      <h2
+        className={`text-3xl md:text-4xl font-bold leading-tight mb-4 ${
+          dark ? 'text-white' : 'text-[var(--color-navy)]'
+        }`}
+      >
         {title}
       </h2>
       {description && (
-        <p className={`text-lg max-w-3xl ${centered ? 'mx-auto' : ''} ${dark ? 'text-gray-300' : 'text-gray-600'}`}>
+        <p
+          className={`text-lg leading-relaxed max-w-3xl ${centered ? 'mx-auto' : ''} ${
+            dark ? 'text-slate-300' : 'text-slate-600'
+          }`}
+        >
           {description}
         </p>
       )}

@@ -11,19 +11,24 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant = 'primary', size = 'md', href, className = '', children, ...props }, ref) => {
-    const baseStyles = 'inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none rounded-sm';
-    
+    const baseStyles =
+      'inline-flex items-center justify-center font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none rounded-md select-none';
+
     const variants = {
-      primary: 'bg-[var(--color-orange)] text-white hover:bg-[#e0752a] focus:ring-[var(--color-orange)]',
-      secondary: 'bg-[var(--color-navy)] text-white hover:bg-[#002a40] focus:ring-[var(--color-navy)]',
-      outline: 'border-2 border-[var(--color-navy)] text-[var(--color-navy)] hover:bg-[var(--color-navy)] hover:text-white focus:ring-[var(--color-navy)]',
-      ghost: 'hover:bg-[var(--color-light)] text-[var(--color-navy)] focus:ring-[var(--color-navy)]',
+      primary:
+        'bg-[var(--color-orange)] text-white hover:bg-[#e5762a] active:bg-[#cc691f] focus-visible:ring-[var(--color-orange)] shadow-sm hover:shadow-md',
+      secondary:
+        'bg-[var(--color-navy)] text-white hover:bg-[#002f47] active:bg-[#001420] focus-visible:ring-[var(--color-navy)] shadow-sm hover:shadow-md',
+      outline:
+        'border-2 border-[var(--color-navy)] text-[var(--color-navy)] hover:bg-[var(--color-navy)] hover:text-white active:bg-[#001420] focus-visible:ring-[var(--color-navy)]',
+      ghost:
+        'hover:bg-slate-100 text-[var(--color-navy)] active:bg-slate-200 focus-visible:ring-[var(--color-navy)]',
     };
 
     const sizes = {
-      sm: 'px-3 py-1.5 text-sm',
-      md: 'px-6 py-3 text-base',
-      lg: 'px-8 py-4 text-lg',
+      sm: 'px-4 py-2 text-sm gap-1.5',
+      md: 'px-6 py-3 text-base gap-2',
+      lg: 'px-8 py-4 text-lg gap-2',
     };
 
     const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;

@@ -12,11 +12,11 @@ export const Footer = () => {
             <Link href="/" className="flex items-center gap-2">
               <Ship className="h-8 w-8 text-[var(--color-orange)]" />
               <span className="font-display font-bold text-2xl tracking-tight">
-                GLOBAL LOGISTICS
+                ADIYOGI INTERNATIONAL
               </span>
             </Link>
             <p className="text-gray-400 mt-4">
-              Providing reliable, fast, and secure freight forwarding and supply chain solutions worldwide.
+              Premium Indian Spices & Agro Commodities Delivered Worldwide.
             </p>
             <div className="flex space-x-4 pt-2 text-sm font-medium">
               <a href="#" className="text-gray-400 hover:text-[var(--color-orange)]">FB</a>
@@ -56,22 +56,22 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="text-[var(--color-orange)] mt-1 shrink-0" size={20} />
-                <span className="text-gray-400">123 Logistics Way, Port District<br />Global City, GC 10020</span>
+                <span className="text-gray-400">Gujarat, India</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-[var(--color-orange)] shrink-0" size={20} />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+91 9016716062 <br /> +91 9408530385</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="text-[var(--color-orange)] shrink-0" size={20} />
-                <span className="text-gray-400">info@globallogistics.com</span>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-[var(--color-orange)] mt-0.5" />
+                <a href="mailto:suyashvyas700@gmail.com" className="text-gray-400 hover:text-white hover:underline transition-colors">suyashvyas700@gmail.com</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-[#002a40] pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Global Logistics. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Adiyogi International. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-[var(--color-orange)]">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-[var(--color-orange)]">Terms of Service</Link>
