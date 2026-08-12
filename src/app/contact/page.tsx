@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { ContactForm } from '@/components/shared/ContactForm';
 import { RecaptchaProvider } from '@/components/shared/Providers';
+import { WhatsAppIcon } from '@/components/shared/WhatsAppIcon';
 
 export default function Contact() {
   return (
@@ -43,8 +44,21 @@ export default function Contact() {
                         <Phone className="text-[var(--color-orange)] h-6 w-6" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-[var(--color-navy)]">Phone / WhatsApp</h4>
-                        <p className="text-slate-600">+91 9016716062<br />+91 9408530385</p>
+                        <h4 className="font-bold text-[var(--color-navy)] mb-1">Phone / WhatsApp</h4>
+                      <div className="flex flex-col gap-1.5 text-slate-600">
+                        <div className="flex items-center gap-2">
+                          <a href="tel:+919016716062" className="hover:text-[var(--color-orange)] transition-colors duration-200">+91 9016716062</a>
+                          <a href="https://wa.me/919016716062" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" aria-label="Chat on WhatsApp">
+                            <WhatsAppIcon className="w-4 h-4" />
+                          </a>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <a href="tel:+919408530385" className="hover:text-[var(--color-orange)] transition-colors duration-200">+91 9408530385</a>
+                          <a href="https://wa.me/919408530385" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" aria-label="Chat on WhatsApp">
+                            <WhatsAppIcon className="w-4 h-4" />
+                          </a>
+                        </div>
+                      </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CTABanner } from '@/components/shared/CTABanner';
 import { Button } from '@/components/ui/Button';
+import { WhatsAppIcon } from '@/components/shared/WhatsAppIcon';
 
 // Mock data for static generation / demonstration
 const serviceData: Record<string, { title: string; description: string; benefits: string[] }> = {
@@ -74,7 +75,12 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                 <Button href="/contact" variant="primary" className="w-full mb-4">Request a Quote</Button>
                 <div className="pt-6 mt-6 border-t border-slate-200">
                   <p className="font-semibold text-[var(--color-navy)] mb-1">Call us directly:</p>
-                  <p className="text-[var(--color-orange)] font-bold text-xl">+91 9016716062</p>
+                  <div className="flex items-center gap-2">
+                    <a href="tel:+919016716062" className="text-[var(--color-orange)] hover:text-[#e5762a] font-bold text-xl transition-colors duration-200">+91 9016716062</a>
+                    <a href="https://wa.me/919016716062" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" aria-label="Chat on WhatsApp">
+                      <WhatsAppIcon className="w-6 h-6" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

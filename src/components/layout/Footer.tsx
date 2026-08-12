@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Ship, Mail, Phone, MapPin } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/shared/WhatsAppIcon';
 
 export const Footer = () => {
   return (
@@ -58,9 +59,22 @@ export const Footer = () => {
                 <MapPin className="text-[var(--color-orange)] mt-1 shrink-0" size={20} />
                 <span className="text-slate-300">Gujarat, India</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="text-[var(--color-orange)] shrink-0" size={20} />
-                <span className="text-slate-300">+91 9016716062 <br /> +91 9408530385</span>
+              <li className="flex items-start gap-3">
+                <Phone className="text-[var(--color-orange)] shrink-0 mt-0.5" size={20} />
+                <div className="flex flex-col gap-1.5 text-slate-300">
+                  <div className="flex items-center gap-2">
+                    <a href="tel:+919016716062" className="hover:text-[var(--color-orange)] transition-colors duration-200">+91 9016716062</a>
+                    <a href="https://wa.me/919016716062" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" aria-label="Chat on WhatsApp">
+                      <WhatsAppIcon className="w-4 h-4" />
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <a href="tel:+919408530385" className="hover:text-[var(--color-orange)] transition-colors duration-200">+91 9408530385</a>
+                    <a href="https://wa.me/919408530385" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" aria-label="Chat on WhatsApp">
+                      <WhatsAppIcon className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-[var(--color-orange)] mt-0.5" />
