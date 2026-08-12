@@ -24,7 +24,7 @@ export const StatCounter = ({ value, label, icon }: StatCounterProps) => {
       <div className="text-4xl md:text-5xl font-display font-bold text-[var(--color-navy)] mb-1 leading-none">
         {value}
       </div>
-      <div className="text-slate-500 font-medium tracking-wide uppercase text-xs mt-2">
+      <div className="text-slate-600 font-medium tracking-wide uppercase text-xs mt-2">
         {label}
       </div>
     </motion.div>

@@ -269,65 +269,6 @@ export default function KabutarMasalaPage() {
         </div>
       </section>
 
-      {/* ── 4. Manufacturer Info ── */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div>
-              <SectionHeading
-                title="Manufacturer Details"
-                description="Shree Laxmi Bhandar — Serving authentic Indian flavors from Ahmedabad."
-              />
-              <ul className="space-y-6">
-                <li className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <MapPin className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Factory Address</p>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Shree Laxmi Bhandar, Nr. Hanumanpura BRTS Bus Stop,<br />Dudheshwar Road, Ahmedabad-380004, Gujarat.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <Phone className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Phone / WhatsApp</p>
-                    <p className="text-slate-600 text-sm">
-                      +91 98987 33880 &nbsp;|&nbsp; +91 98259 40300
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <Mail className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Business Email</p>
-                    <a href="mailto:umangshah7771@yahoo.co.in" className="text-[var(--color-orange)] text-sm font-medium hover:underline">
-                      umangshah7771@yahoo.co.in
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="relative h-64 lg:h-full min-h-[300px] rounded-2xl overflow-hidden bg-slate-100 shadow-sm border border-slate-200">
-              <Image
-                src="/products/2/slb-kabutar-masala-brand-banner.jpg"
-                alt="Spice production facility"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <CTABanner title="Ready to partner with SLB Kabutar Masala?" />
     </>
   );

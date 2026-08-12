@@ -18,7 +18,7 @@ export const SectionHeading = ({
   dark = false,
 }: SectionHeadingProps) => {
   return (
-    <div className={`mb-10 ${centered ? 'text-center' : ''} ${className}`}>
+    <div className={`mb-8 ${centered ? 'text-center' : ''} ${className}`}>
       {eyebrow && (
         <span className="inline-block font-bold uppercase tracking-widest text-xs mb-3 text-[var(--color-orange)] bg-[var(--color-orange)]/10 px-3 py-1 rounded-full">
           {eyebrow}

@@ -20,7 +20,7 @@ export default function Services() {
 
   return (
     <>
-      <div className="bg-[var(--color-navy)] pt-28 pb-20 text-white">
+      <div className="bg-[var(--color-navy)] pt-24 pb-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ label: 'Services', href: '/services' }]} />
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 leading-tight">Our Services</h1>
@@ -31,6 +31,7 @@ export default function Services() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
+            eyebrow="What We Offer"
             title="End-to-end agro export solutions."
             description="We manage every aspect of the supply chain, ensuring your cargo moves efficiently from origin to destination."
           />

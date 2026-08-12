@@ -10,7 +10,7 @@ export const CTABanner = ({
   subtitle?: string;
 }) => {
   return (
-    <section className="bg-[var(--color-navy)] py-20 relative overflow-hidden">
+    <section className="bg-[var(--color-navy)] py-16 relative overflow-hidden">
       {/* Decorative shape */}
       <div
         className="absolute inset-0 pointer-events-none select-none opacity-[0.07]"
@@ -32,10 +32,10 @@ export const CTABanner = ({
             <ArrowRight className="ml-1 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button
-            href="/services"
+            href="/products"
             variant="outline"
             size="lg"
-            className="border-slate-500 text-slate-200 hover:border-white hover:text-white hover:bg-transparent"
+            className="border-white/60 text-white hover:bg-white/10 hover:border-white"
           >
             Explore Products
           </Button>

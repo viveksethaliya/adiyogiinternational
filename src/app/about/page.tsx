@@ -8,7 +8,7 @@ import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 export default function About() {
   return (
     <>
-      <div className="bg-[var(--color-navy)] pt-28 pb-20 text-white">
+      <div className="bg-[var(--color-navy)] pt-24 pb-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ label: 'About Us', href: '/about' }]} />
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 leading-tight">About Adiyogi International</h1>
@@ -19,7 +19,7 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <div className="lg:col-span-5 relative min-h-[420px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-xl hidden lg:block sticky top-28">
+            <div className="lg:col-span-5 relative min-h-[420px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-xl hidden lg:block sticky top-24">
               <Image 
                 src="/warehouse_interior_1784568830787.png" 
                 alt="Agricultural warehouse operations" 

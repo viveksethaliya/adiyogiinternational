@@ -7,6 +7,7 @@
 
 @theme inline {
   --color-navy: #001B29;
+  --color-navy-light: #002a40;
   --color-orange: #FC8430;
   --color-steel: #334155;
   --color-light: #E0E3E5;
@@ -29,6 +30,12 @@
 /* Prevent horizontal scroll from framer-motion animations */
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Offset anchor scrolling so sticky header doesn't cover content */
+html {
+  scroll-padding-top: 4rem; /* matches h-16 header */
 }
 
 body {

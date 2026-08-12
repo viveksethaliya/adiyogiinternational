@@ -26,7 +26,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-navy)]/60 via-transparent to-transparent" />
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left pt-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left pt-8">
           <div className="max-w-4xl">
             <span className="block text-[var(--color-orange)] font-bold tracking-wider uppercase mb-4 text-sm md:text-base animate-fade-in-up">
               Adiyogi International
@@ -34,7 +34,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight animate-fade-in-up animation-delay-100">
               Premium Indian Spices & Agro Commodities Delivered <span className="text-[var(--color-orange)]">Worldwide</span>.
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-10 animate-fade-in-up animation-delay-200 max-w-3xl">
+            <p className="text-lg md:text-xl text-slate-100 mb-10 animate-fade-in-up animation-delay-200 max-w-3xl">
               Your Trusted Gujarat-Based Merchant Export Partner Connecting Global Markets with Authentic, High-Quality Agricultural Products.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-300">
@@ -42,9 +42,12 @@ export default function Home() {
                 Request a Free Quote 
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button href="/services" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[var(--color-navy)]">
+              <Link
+                href="/products"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-md border-2 border-white text-white bg-transparent hover:bg-white hover:text-[var(--color-navy)] active:bg-slate-100 transition-colors duration-200 select-none"
+              >
                 Explore Product Catalog
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -106,7 +109,7 @@ export default function Home() {
                   ))}
                 </div>
                 <Button href="/products/kabutar-masala" variant="outline" className="mt-auto w-full group-hover:bg-[var(--color-orange)] group-hover:text-white group-hover:border-[var(--color-orange)] transition-colors">
-                  Explore Spice Catalog
+                  View Details &amp; Pricing
                 </Button>
               </div>
             </Card>
@@ -162,7 +165,7 @@ export default function Home() {
                   ))}
                 </div>
                 <Button href="/products/natural-keshari-gold" variant="outline" className="mt-auto w-full group-hover:bg-[var(--color-orange)] group-hover:text-white group-hover:border-[var(--color-orange)] transition-colors">
-                  View COA & Request Sample
+                  View Details & Pricing
                 </Button>
               </div>
             </Card>
@@ -246,7 +249,7 @@ export default function Home() {
       </section>
 
       {/* 6. Process Snapshot */}
-      <section className="py-24 bg-[var(--color-navy)] text-white">
+      <section className="py-20 bg-[var(--color-navy)] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
             eyebrow="How We Work"
@@ -277,7 +280,7 @@ export default function Home() {
       </section>
 
       {/* 7. Why Choose Us */}
-      <section className="py-20 bg-slate-50">
+      <section className="pt-16 pb-10 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
             eyebrow="Why Choose Us"
@@ -333,7 +336,7 @@ export default function Home() {
               }
             ].map((feature, i) => (
               <Card key={i} className="p-7 flex flex-col h-full">
-                <feature.icon className="h-9 w-9 text-[var(--color-navy)] mb-4 shrink-0" />
+                <feature.icon className="h-9 w-9 text-[var(--color-orange)] mb-4 shrink-0" />
                 <h3 className="text-base font-bold text-[var(--color-navy)] mb-2">{feature.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed flex-grow">{feature.desc}</p>
               </Card>
@@ -343,7 +346,7 @@ export default function Home() {
       </section>
 
       {/* 8. Stats Counters */}
-      <section className="py-16 bg-white border-y border-slate-200">
+      <section className="py-10 bg-white border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-200">
             <StatCounter value="50+" label="Export Destinations" />

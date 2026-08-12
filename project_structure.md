@@ -9,13 +9,28 @@ t:\freelance\adiyogi\
 ├── public/                     # Static assets (images, icons, etc.)
 │   ├── hero_port_ship_*.png
 │   ├── warehouse_interior_*.png
-│   └── truck_highway_*.png
+│   ├── truck_highway_*.png
+│   └── products/               # Product specific images and videos
+│       ├── 1/                  # Anugrah Chakki Fresh Atta assets
+│       ├── 2/                  # SLB Kabutar Masala assets
+│       └── 3/                  # Natural Keshari Gold assets
 ├── src/                        # Source code
 │   ├── app/                    # Next.js App Router structure
 │   │   ├── about/
 │   │   │   └── page.tsx        # About Us page
+│   │   ├── api/
+│   │   │   └── contact/        # Contact form API route
+│   │   │       └── route.ts
 │   │   ├── contact/
 │   │   │   └── page.tsx        # Contact Us page
+│   │   ├── products/
+│   │   │   ├── anugrah-chakki-fresh-atta/
+│   │   │   │   └── page.tsx    # Product Detail: Anugrah Atta
+│   │   │   ├── kabutar-masala/
+│   │   │   │   └── page.tsx    # Product Detail: Kabutar Masala
+│   │   │   ├── natural-keshari-gold/
+│   │   │   │   └── page.tsx    # Product Detail: Keshari Gold
+│   │   │   └── page.tsx        # All Products listing page
 │   │   ├── services/
 │   │   │   ├── [slug]/         # Dynamic service detail pages
 │   │   │   │   └── page.tsx
@@ -30,7 +45,9 @@ t:\freelance\adiyogi\
 │       │   └── Header.tsx
 │       ├── shared/             # Shared functional components
 │       │   ├── Breadcrumbs.tsx
+│       │   ├── ContactForm.tsx
 │       │   ├── CTABanner.tsx
+│       │   ├── Providers.tsx
 │       │   └── StatCounter.tsx
 │       └── ui/                 # Base UI components
 │           ├── Button.tsx

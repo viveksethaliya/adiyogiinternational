@@ -26,9 +26,10 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
 
   return (
     <>
-      <div className="bg-[var(--color-navy)] py-20 text-white">
+      {/* Page Hero — pt-24 clears the 64px sticky nav, pb-16 gives balanced padding */}
+      <div className="bg-[var(--color-navy)] pt-24 pb-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/services" className="inline-flex items-center text-[var(--color-orange)] hover:text-white transition-colors mb-6 font-medium">
+          <Link href="/services" className="inline-flex items-center text-[var(--color-orange)] hover:text-white transition-colors duration-200 mb-6 font-medium">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Services
           </Link>
           <Breadcrumbs items={[
@@ -36,14 +37,15 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
             { label: data.title, href: `/services/${slug}` }
           ]} />
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">{data.title}</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">{data.description}</p>
+          <p className="text-xl text-slate-300 max-w-3xl leading-relaxed">{data.description}</p>
         </div>
       </div>
 
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-8 text-gray-600 text-lg">
+            {/* Main Content */}
+            <div className="lg:col-span-2 space-y-8 text-slate-600 text-lg">
               <h2 className="text-3xl font-bold text-[var(--color-navy)]">Service Overview</h2>
               <p>
                 Our {data.title.toLowerCase()} services are designed to navigate the complexities of international trade on your behalf. 
@@ -56,7 +58,7 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
               <h3 className="text-2xl font-bold text-[var(--color-navy)] mt-12 mb-6">Key Benefits</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {data.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-center gap-3 bg-[var(--color-light)]/50 p-4 rounded-sm">
+                  <li key={i} className="flex items-center gap-3 bg-slate-50 border border-slate-200 p-4 rounded-lg">
                     <CheckCircle className="text-[var(--color-orange)] h-5 w-5 shrink-0" />
                     <span className="font-medium text-[var(--color-navy)]">{benefit}</span>
                   </li>
@@ -64,14 +66,15 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
               </ul>
             </div>
             
+            {/* Sticky Sidebar — top-24 matches h-16 header + 8px safety gap */}
             <div className="lg:col-span-1">
-              <div className="bg-[var(--color-light)]/30 p-8 rounded-sm border border-[var(--color-light)] sticky top-28">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-xl sticky top-24">
                 <h3 className="text-xl font-bold text-[var(--color-navy)] mb-4">Need this service?</h3>
-                <p className="text-gray-600 mb-6">Contact our logistics experts to get a customized quote for your specific requirements.</p>
+                <p className="text-slate-600 mb-6">Contact our logistics experts to get a customized quote for your specific requirements.</p>
                 <Button href="/contact" variant="primary" className="w-full mb-4">Request a Quote</Button>
-                <div className="pt-6 mt-6 border-t border-[var(--color-light)]">
+                <div className="pt-6 mt-6 border-t border-slate-200">
                   <p className="font-semibold text-[var(--color-navy)] mb-1">Call us directly:</p>
-                  <p className="text-[var(--color-orange)] font-bold text-xl">+1 (555) 123-4567</p>
+                  <p className="text-[var(--color-orange)] font-bold text-xl">+91 9016716062</p>
                 </div>
               </div>
             </div>

@@ -259,73 +259,28 @@ export default function AnugrahChakkiAttaPage() {
         </div>
       </section>
 
-      {/* ── 5. Manufacturer Info ── */}
+      {/* ── 5. Quality Assurance ── */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div>
-              <SectionHeading
-                title="Manufacturer Details"
-                description="A trusted flour milling unit operating under full FSSAI compliance from Godhra, Gujarat."
-              />
-              <ul className="space-y-6">
-                <li className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <MapPin className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Factory Address</p>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      67, GIDC Industrial Estate,<br />Godhra, Gujarat — 389220, India
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <Phone className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Phone / WhatsApp</p>
-                    <p className="text-slate-600 text-sm">
-                      +91 9664803557 &nbsp;|&nbsp; +91 7567010097
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <Mail className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Business Email</p>
-                    <a href="mailto:anugrahflour@gmail.com" className="text-[var(--color-orange)] text-sm font-medium hover:underline">
-                      anugrahflour@gmail.com
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <SectionHeading
-                title="Quality Assurance"
-              />
-              <ul className="space-y-4">
-                {[
-                  'FSSAI License No. 2072504600221 — active & verified',
-                  'Batch-level traceability from farm to dispatch',
-                  'Moisture-controlled storage to maintain freshness',
-                  'Custom moisture % and protein content on request',
-                  'SGS / third-party lab inspection available for exports',
-                  'Phytosanitary certificate provided for international orders',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-slate-700">
-                    <CheckCircle className="h-5 w-5 text-[var(--color-orange)] shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title="Quality Assurance"
+            centered
+          />
+          <ul className="space-y-4">
+            {[
+              'FSSAI License No. 2072504600221 — active & verified',
+              'Batch-level traceability from farm to dispatch',
+              'Moisture-controlled storage to maintain freshness',
+              'Custom moisture % and protein content on request',
+              'SGS / third-party lab inspection available for exports',
+              'Phytosanitary certificate provided for international orders',
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 text-sm text-slate-700">
+                <CheckCircle className="h-5 w-5 text-[var(--color-orange)] shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

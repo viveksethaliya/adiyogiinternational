@@ -294,59 +294,6 @@ export default function NaturalKeshariGoldPage() {
         </div>
       </section>
 
-      {/* ── 6. Manufacturer Info ── */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SectionHeading
-            title="Manufacturer Credentials"
-            description="Message Food Services / Maxon Synthesis"
-            centered
-          />
-          <div className="inline-block text-left bg-white p-8 rounded-2xl border border-slate-200 shadow-sm max-w-3xl w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <MapPin className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Factory Address</p>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Fareni Road, Village: Mota Gundala,<br />Ta. Jetpur - 360370, Dist: Rajkot, Gujarat
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <MapPin className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Corporate Office</p>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Heera Panna Complex, Post Office Road,<br />Dhoraji - 360410, Gujarat
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-slate-50 p-3 rounded-full shrink-0 border border-slate-100">
-                    <Phone className="h-5 w-5 text-[var(--color-orange)]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[var(--color-navy)] text-sm mb-1">Phone / Toll-Free</p>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      +91 2824 223921<br />1-800-233-3421
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <CTABanner title="Ready to request a sample or bulk quotation?" />
     </>
   );
