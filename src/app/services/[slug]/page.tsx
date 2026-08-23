@@ -8,11 +8,6 @@ import { WhatsAppIcon } from '@/components/shared/WhatsAppIcon';
 
 // Mock data for static generation / demonstration
 const serviceData: Record<string, { title: string; description: string; benefits: string[] }> = {
-  'ocean-freight': {
-    title: 'Ocean Freight Forwarding',
-    description: 'We offer reliable, cost-effective ocean freight services for both Full Container Load (FCL) and Less than Container Load (LCL) shipments.',
-    benefits: ['Global carrier network', 'Customs clearance included', 'Real-time tracking', 'Door-to-door delivery'],
-  },
 };
 
 export default async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) {

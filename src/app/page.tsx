@@ -227,7 +227,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Ship, title: "Ocean Freight", desc: "FCL and LCL shipping across major global trade lanes via Mundra, Kandla & Pipavav." },
+              { icon: Shield, title: "Customs Clearance", desc: "Expert navigation of global customs regulations ensuring smooth borders." },
               { icon: Package, title: "Export Packaging", desc: "Customized PP bags, jute bags, vacuum bags, and retail private labeling." },
               { icon: Truck, title: "Logistics & Transport", desc: "Reliable inland haulage and port delivery from farm to container." },
               { icon: Shield, title: "Quality & Compliance", desc: "APEDA, FSSAI, and IEC compliant documentation and pre-shipment inspection." }
