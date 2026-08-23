@@ -9,7 +9,6 @@ import Link from 'next/link';
 export default function Services() {
   const services = [
     { slug: 'ocean-freight', icon: Ship, title: 'Ocean Freight Forwarding', desc: 'Comprehensive FCL and LCL shipping solutions across all major global trade lanes.' },
-    { slug: 'air-freight', icon: Plane, title: 'Air Freight Forwarding', desc: 'Expedited and consolidated air cargo services for time-critical international shipments.' },
     { slug: 'road-transport', icon: Truck, title: 'Road Transport', desc: 'Reliable inland haulage, cross-border trucking, and last-mile delivery services.' },
     { slug: 'customs-clearance', icon: Shield, title: 'Customs Clearance', desc: 'Expert navigation of global customs regulations to ensure smooth border crossings.' },
     { slug: 'warehousing', icon: Package, title: 'Warehousing & Distribution', desc: 'Secure storage, inventory management, and strategic distribution center services.' },

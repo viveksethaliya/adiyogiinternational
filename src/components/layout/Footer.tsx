@@ -44,7 +44,6 @@ export const Footer = () => {
             <h3 className="font-display font-bold text-lg mb-4 text-white">Our Services</h3>
             <ul className="space-y-2">
               <li><Link href="/services/ocean-freight" className="text-slate-300 hover:text-[var(--color-orange)] transition-colors duration-200">Ocean Freight</Link></li>
-              <li><Link href="/services/air-freight" className="text-slate-300 hover:text-[var(--color-orange)] transition-colors duration-200">Air Freight</Link></li>
               <li><Link href="/services/road-transport" className="text-slate-300 hover:text-[var(--color-orange)] transition-colors duration-200">Road Transport</Link></li>
               <li><Link href="/services/customs-clearance" className="text-slate-300 hover:text-[var(--color-orange)] transition-colors duration-200">Customs Clearance</Link></li>
               <li><Link href="/services/warehousing" className="text-slate-300 hover:text-[var(--color-orange)] transition-colors duration-200">Warehousing</Link></li>
