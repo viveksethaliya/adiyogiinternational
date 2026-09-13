@@ -10,15 +10,21 @@ async function verifyRecaptchaV3(token: string): Promise<boolean> {
     return true;
   }
 
-  const secretKey = process.env.SECRETY_KEY;
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
   const res = await fetch('https://www.google.com/recaptcha/api/siteverify', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: `secret=${secretKey}&response=${token}`,
   });
   const data = await res.json();
+  
+  if (!data.success) {
+    console.error('[reCAPTCHA] Verification failed:', data);
+  }
+  
   // v3 returns a score 0.0 (bot) → 1.0 (human). Threshold: 0.5
-  return data.success === true && data.score >= 0.5;
+  // Enterprise legacy sometimes omits score if action wasn't set or just returns success
+  return data.success === true && (data.score === undefined || data.score >= 0.5);
 }
 
 export async function POST(req: NextRequest) {

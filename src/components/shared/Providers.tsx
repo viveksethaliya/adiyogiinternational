@@ -9,7 +9,10 @@ import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
  */
 export function RecaptchaProvider({ children }: { children: React.ReactNode }) {
   return (
-    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_SITE_KEY as string}>
+    <GoogleReCaptchaProvider 
+      reCaptchaKey={process.env.NEXT_PUBLIC_SITE_KEY as string}
+      useEnterprise={true}
+    >
       {children}
     </GoogleReCaptchaProvider>
   );
