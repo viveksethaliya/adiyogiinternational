@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { CTABanner } from '@/components/shared/CTABanner';
 import { StatCounter } from '@/components/shared/StatCounter';
+import { ProductCard } from '@/components/shared/ProductCard';
+import { powderProducts } from '@/data/powders';
 
 export default function Home() {
   return (
@@ -109,7 +111,7 @@ export default function Home() {
                   ))}
                 </div>
                 <Button href="/products/kabutar-masala" variant="outline" className="mt-auto w-full group-hover:bg-[var(--color-orange)] group-hover:text-white group-hover:border-[var(--color-orange)] transition-colors">
-                  View Details &amp; Pricing
+                  View Details
                 </Button>
               </div>
             </Card>
@@ -137,38 +139,13 @@ export default function Home() {
                   ))}
                 </div>
                 <Button href="/products/anugrah-chakki-fresh-atta" variant="outline" className="mt-auto w-full group-hover:bg-[var(--color-orange)] group-hover:text-white group-hover:border-[var(--color-orange)] transition-colors">
-                  View Details & Pricing
+                  View Details
                 </Button>
               </div>
             </Card>
 
-            {/* Product 3: Keshari Gold */}
-            <Card className="flex flex-col h-full overflow-hidden group hover:shadow-lg transition-all duration-300">
-              <div className="relative aspect-[4/3] bg-white border-b border-slate-100 overflow-hidden">
-                <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 border border-slate-200">
-                  <Leaf className="h-4 w-4 text-green-600" />
-                  <span className="text-xs font-bold text-slate-700">100% Synthetic-Free</span>
-                </div>
-                <Image 
-                  src="/products/3/natural-keshari-gold-1l-bottle-product-view.jpg" 
-                  alt="Natural Keshari Gold" 
-                  fill 
-                  className="object-contain p-6 group-hover:scale-105 transition-transform duration-500" 
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-[var(--color-navy)] mb-2">Natural Keshari Gold (G-03) Liquid Food Color</h3>
-                <p className="text-slate-600 text-sm mb-4">Plant-Derived Color Extract (Curcumin & Paprika)</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {['Lab Certified', 'Low Heavy Metals (<1.2 ppm)', '1L Bottles'].map(tag => (
-                    <span key={tag} className="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-md font-medium border border-slate-200">{tag}</span>
-                  ))}
-                </div>
-                <Button href="/products/natural-keshari-gold" variant="outline" className="mt-auto w-full group-hover:bg-[var(--color-orange)] group-hover:text-white group-hover:border-[var(--color-orange)] transition-colors">
-                  View Details & Pricing
-                </Button>
-              </div>
-            </Card>
+            {/* Product 3: Garlic Powder */}
+            <ProductCard product={powderProducts[0]} />
           </div>
           
           <div className="mt-12 text-center">

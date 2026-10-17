@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Ship } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { powderProducts } from '@/data/powders';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,8 +33,8 @@ export const Header = () => {
       dropdown: [
         { name: 'All Products', href: '/products' },
         { name: 'SLB Kabutar Masala', href: '/products/kabutar-masala' },
-        { name: 'Natural Keshari Gold', href: '/products/natural-keshari-gold' },
         { name: 'Anugrah Chakki Atta', href: '/products/anugrah-chakki-fresh-atta' },
+        ...powderProducts.map((p) => ({ name: p.name, href: `/products/${p.slug}` })),
       ]
     },
     { name: 'Contact', href: '/contact' },

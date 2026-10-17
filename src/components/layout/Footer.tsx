@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Ship, Mail, Phone, MapPin } from 'lucide-react';
 import { WhatsAppIcon } from '@/components/shared/WhatsAppIcon';
+import { company } from '@/data/company';
 
 export const Footer = () => {
   return (
@@ -19,6 +20,10 @@ export const Footer = () => {
             <p className="text-slate-300 mt-4">
               Premium Indian Spices & Agro Commodities Delivered Worldwide.
             </p>
+            <div className="text-sm text-slate-400 space-y-1">
+              <p>GSTIN: <span className="font-mono text-slate-300">{company.gstin}</span></p>
+              <p>IEC: <span className="font-mono text-slate-300">{company.iec}</span></p>
+            </div>
             <div className="flex space-x-4 pt-2 text-sm font-medium">
               <a href="#" className="text-slate-400 hover:text-[var(--color-orange)] transition-colors duration-200">FB</a>
               <a href="#" className="text-slate-400 hover:text-[var(--color-orange)] transition-colors duration-200">TW</a>

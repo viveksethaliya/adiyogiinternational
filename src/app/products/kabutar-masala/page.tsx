@@ -43,12 +43,12 @@ export default function KabutarMasalaPage() {
   ];
 
   const catalog = [
-    { name: 'Special Rajwadi Masala', type: 'Special Masala', price: '₹420', bulkPrice: 'Contact Us' },
-    { name: 'Kashmiri Chilli Powder', type: 'Chilli Powder', price: '₹380', bulkPrice: 'Contact Us' },
-    { name: 'Selam Turmeric Powder', type: 'Turmeric', price: '₹180', bulkPrice: 'Contact Us' },
-    { name: 'Dhanajeera Powder', type: 'Turmeric & Dhana', price: '₹220', bulkPrice: 'Contact Us' },
-    { name: 'Premium Hing', type: 'Special Masala', price: '₹850', bulkPrice: 'Contact Us' },
-    { name: 'Reshampatti Chilli', type: 'Chilli Powder', price: '₹320', bulkPrice: 'Contact Us' },
+    { name: 'Special Rajwadi Masala', type: 'Special Masala' },
+    { name: 'Kashmiri Chilli Powder', type: 'Chilli Powder' },
+    { name: 'Selam Turmeric Powder', type: 'Turmeric' },
+    { name: 'Dhanajeera Powder', type: 'Turmeric & Dhana' },
+    { name: 'Premium Hing', type: 'Special Masala' },
+    { name: 'Reshampatti Chilli', type: 'Chilli Powder' },
   ];
 
   return (
@@ -203,7 +203,7 @@ export default function KabutarMasalaPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            title="Standard Product Catalog & Pricing"
+            title="Standard Product Catalog"
             description="Our primary range of whole and ground spices available for immediate wholesale dispatch."
           />
 
@@ -214,7 +214,7 @@ export default function KabutarMasalaPage() {
                   <tr className="bg-[var(--color-navy)] text-white border-b border-slate-200">
                     <th className="px-6 py-4 font-semibold">Item Name</th>
                     <th className="px-6 py-4 font-semibold">Category</th>
-                    <th className="px-6 py-4 font-semibold">Base Wholesale Price (₹/kg)</th>
+                    <th className="px-6 py-4 font-semibold">Price</th>
                     <th className="px-6 py-4 font-semibold">Action</th>
                   </tr>
                 </thead>
@@ -229,7 +229,7 @@ export default function KabutarMasalaPage() {
                           {p.type}
                         </span>
                       </td>
-                      <td className="px-6 py-4 font-bold text-[var(--color-navy)]">{p.price}</td>
+                      <td className="px-6 py-4 font-bold text-[var(--color-navy)]">Price on request</td>
                       <td className="px-6 py-4">
                         <Link
                           href="/contact"
@@ -253,18 +253,10 @@ export default function KabutarMasalaPage() {
                   </div>
                 </div>
               </a>
-              <a href="/products/2/slb-kabutar-masala-wholesale-price-list.jpg" target="_blank" rel="noopener noreferrer" className="block group">
-                <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white hover:shadow-md transition-shadow">
-                  <Image src="/products/2/slb-kabutar-masala-wholesale-price-list.jpg" alt="Wholesale Price List" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span className="bg-white text-[var(--color-navy)] px-4 py-2 rounded-md font-bold text-sm">View Price List</span>
-                  </div>
-                </div>
-              </a>
             </div>
           </div>
           <p className="text-xs text-slate-500 mt-3">
-            * Prices are indicative and subject to change based on market rates and total order volume.
+            * Pricing is shared on request and depends on market rates and total order volume.
           </p>
         </div>
       </section>

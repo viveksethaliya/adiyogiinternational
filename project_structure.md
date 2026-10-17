@@ -13,7 +13,8 @@ t:\freelance\adiyogi\
 │   └── products/               # Product specific images and videos
 │       ├── 1/                  # Anugrah Chakki Fresh Atta assets
 │       ├── 2/                  # SLB Kabutar Masala assets
-│       └── 3/                  # Natural Keshari Gold assets
+│       ├── 3/                  # Former Natural Keshari Gold assets (page removed)
+│       └── powders/            # Garlic, onion, beetroot and ginger powder photos and video
 ├── src/                        # Source code
 │   ├── app/                    # Next.js App Router structure
 │   │   ├── about/
@@ -24,12 +25,12 @@ t:\freelance\adiyogi\
 │   │   ├── contact/
 │   │   │   └── page.tsx        # Contact Us page
 │   │   ├── products/
+│   │   │   ├── [slug]/                 # Powder product pages (data in src/data/powders.ts)
+│   │   │   │   └── page.tsx
 │   │   │   ├── anugrah-chakki-fresh-atta/
 │   │   │   │   └── page.tsx    # Product Detail: Anugrah Atta
 │   │   │   ├── kabutar-masala/
 │   │   │   │   └── page.tsx    # Product Detail: Kabutar Masala
-│   │   │   ├── natural-keshari-gold/
-│   │   │   │   └── page.tsx    # Product Detail: Keshari Gold
 │   │   │   └── page.tsx        # All Products listing page
 │   │   ├── services/
 │   │   │   ├── [slug]/         # Dynamic service detail pages
@@ -39,6 +40,9 @@ t:\freelance\adiyogi\
 │   │   ├── globals.css         # Global styles and Tailwind v4 theme variables
 │   │   ├── layout.tsx          # Root layout with shared Header/Footer
 │   │   └── page.tsx            # Homepage
+│   ├── data/                   # Static content: powder products, company IDs
+│   │   ├── company.ts
+│   │   └── powders.ts
 │   └── components/             # Reusable React components
 │       ├── layout/             # Global layout components
 │       │   ├── Footer.tsx
@@ -47,6 +51,8 @@ t:\freelance\adiyogi\
 │       │   ├── Breadcrumbs.tsx
 │       │   ├── ContactForm.tsx
 │       │   ├── CTABanner.tsx
+│       │   ├── ProductCard.tsx
+│       │   ├── ProductGallery.tsx
 │       │   ├── Providers.tsx
 │       │   └── StatCounter.tsx
 │       └── ui/                 # Base UI components

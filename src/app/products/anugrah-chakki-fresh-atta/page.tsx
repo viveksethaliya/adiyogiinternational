@@ -45,10 +45,10 @@ export default function AnugrahChakkiAttaPage() {
   ];
 
   const packs = [
-    { size: '5 kg', price: '₹170', gst: 'Incl. GST', type: 'Consumer', highlight: false },
-    { size: '10 kg', price: '₹340', gst: 'Incl. GST', type: 'Consumer', highlight: false },
-    { size: '30 kg', price: '₹990', gst: 'No GST', type: 'Commercial', highlight: true },
-    { size: '50 kg', price: '₹1,650', gst: 'No GST', type: 'Commercial', highlight: true },
+    { size: '5 kg', gst: 'Incl. GST', type: 'Consumer', highlight: false },
+    { size: '10 kg', gst: 'Incl. GST', type: 'Consumer', highlight: false },
+    { size: '30 kg', gst: 'No GST', type: 'Commercial', highlight: true },
+    { size: '50 kg', gst: 'No GST', type: 'Commercial', highlight: true },
   ];
 
   const b2bTerms = [
@@ -179,7 +179,7 @@ export default function AnugrahChakkiAttaPage() {
         </div>
       </section>
 
-      {/* ── 3. Packaging & Pricing Matrix ── */}
+      {/* ── 3. Packaging Matrix ── */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -191,7 +191,7 @@ export default function AnugrahChakkiAttaPage() {
               <thead>
                 <tr className="bg-[var(--color-navy)] text-white border-b border-slate-200">
                   <th className="px-6 py-4 font-semibold">Pack Size</th>
-                  <th className="px-6 py-4 font-semibold">Price (MRP)</th>
+                  <th className="px-6 py-4 font-semibold">Price</th>
                   <th className="px-6 py-4 font-semibold">GST Status</th>
                   <th className="px-6 py-4 font-semibold">Buyer Type</th>
                   <th className="px-6 py-4 font-semibold">Action</th>
@@ -209,7 +209,7 @@ export default function AnugrahChakkiAttaPage() {
                         {p.size}
                       </div>
                     </td>
-                    <td className="px-6 py-4 font-bold text-[var(--color-navy)] text-base">{p.price}</td>
+                    <td className="px-6 py-4 font-bold text-[var(--color-navy)] text-sm">Price on request</td>
                     <td className="px-6 py-4">
                       <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
                         {p.gst}

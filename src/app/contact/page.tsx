@@ -1,9 +1,10 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, FileText } from 'lucide-react';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { ContactForm } from '@/components/shared/ContactForm';
 import { RecaptchaProvider } from '@/components/shared/Providers';
 import { WhatsAppIcon } from '@/components/shared/WhatsAppIcon';
+import { company } from '@/data/company';
 
 export default function Contact() {
   return (
@@ -77,6 +78,15 @@ export default function Contact() {
                       <div>
                         <h4 className="font-bold text-[var(--color-navy)]">Business Hours</h4>
                         <p className="text-slate-600">Monday - Saturday: 09:00 AM - 07:00 PM (IST)<br />Sunday: Closed</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-[var(--color-orange)]/10 p-3 rounded-full">
+                        <FileText className="text-[var(--color-orange)] h-6 w-6" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[var(--color-navy)]">Business Registration</h4>
+                        <p className="text-slate-600">GSTIN: <span className="font-mono">{company.gstin}</span><br />IEC: <span className="font-mono">{company.iec}</span></p>
                       </div>
                     </div>
                   </div>
