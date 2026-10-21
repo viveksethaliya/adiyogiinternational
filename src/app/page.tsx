@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Ship, Plane, Truck, Package, Shield, Globe2, Anchor, Clock, Users, CheckCircle, BadgeCheck, FileText, FileBadge, Building2, Leaf, CircleDollarSign, Timer, Box, HeartHandshake } from 'lucide-react';
+import { ArrowRight, Ship, Plane, Truck, Package, Shield, Globe2, Anchor, Clock, Users, CheckCircle, BadgeCheck, FileText, FileBadge, Building2, Leaf, CircleDollarSign, Timer, Box, HeartHandshake, Download } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -152,6 +152,52 @@ export default function Home() {
             <Button href="/products" variant="secondary" size="lg">
               View All Products
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* 3b. Company Profile Download */}
+      <section className="py-16 bg-[var(--color-navy)] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr] gap-10 md:gap-14 items-center">
+            <a
+              href="/Adiyogi-International-Company-Profile.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex={-1}
+              aria-hidden="true"
+              className="group block w-44 sm:w-52 mx-auto md:mx-0"
+            >
+              <div className="relative aspect-[210/297] rounded-lg overflow-hidden shadow-2xl ring-1 ring-white/20 group-hover:-translate-y-1 transition-transform duration-300">
+                <Image
+                  src="/company-profile-cover.jpg"
+                  alt=""
+                  fill
+                  sizes="208px"
+                  className="object-cover"
+                />
+              </div>
+            </a>
+            <div className="text-center md:text-left">
+              <SectionHeading
+                eyebrow="Download"
+                title="Company Profile & Product Catalogue"
+                description="Our range of Indian spices and wheat flour with botanical names and HS codes, how we handle export from farm to port, and the markets we serve."
+                dark
+              />
+              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                <a
+                  href="/Adiyogi-International-Company-Profile.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[var(--color-orange)] text-white font-bold px-6 py-3.5 rounded-md hover:bg-[#e5762a] active:bg-[#cc691f] transition-colors duration-200 text-sm shadow-sm"
+                >
+                  <Download className="h-4 w-4" />
+                  Download Company Profile
+                </a>
+                <span className="text-sm text-slate-400">PDF · 5 pages · 1.8 MB</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
